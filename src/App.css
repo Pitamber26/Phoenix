@@ -1,0 +1,41 @@
+.App {
+  text-align: center;
+  /* border: 10px solid green; */
+}
+
+.App{
+ background-image: url(/public/images/Background.png);
+ background-repeat: no-repeat;
+ background-size: 100% 90%;
+}
+h1{
+  padding-top: 10vh;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: 700;
+}
+.sides{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 1411px) and (min-width: 700px){
+  .App{
+    background-size: 100% 100%
+  }
+   .sides{
+    flex-direction: column-reverse;
+   }
+}
+
+
+@media only screen and (max-width: 700px) and (min-width: 300px){
+  .App{
+    background-size: 100% 100%;
+    background-color: green;
+  }
+   .sides{
+    flex-direction: column-reverse;
+   }
+  }
